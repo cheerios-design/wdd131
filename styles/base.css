@@ -140,4 +140,5 @@ footer {
     color: var(--mainwhite);
     text-align: center;
     height: 100px;
+    padding: 10px;
 }
