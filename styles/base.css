@@ -148,3 +148,22 @@ footer {
     border-radius: 5px;
     /* margin: -10px 0 50px 0; */
 }
+
+.card ul#resources {
+    list-style: circle;
+}
+
+.card ul#resources li {
+    padding: 0;
+}
+
+.card ul#resources li a {
+    text-decoration: none;
+    padding: 0;
+    color: var(--secondary);
+}
+
+.card ul#resources li a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
