@@ -11,15 +11,21 @@
 
     #menu {
         display: none;
+        /* Hide the hamburger button */
     }
 
     .navigation {
+        display: flex;
+        /* Always visible on larger screens */
         flex-direction: row;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
     }
 
     .navigation a {
         display: block;
-        flex: 1 1 100%;
+        padding: 0.5rem 1rem;
     }
 }
 
