@@ -1,0 +1,190 @@
+/* Global CSS Variables */
+:root {
+    --primary: #FFB732;
+    --secondary: #1A2933;
+    --mainwhite: #f3f3f3;
+    --header-font: "Montserrat", sans-serif;
+    --paragraph-font: 'Poppins', sans-serif;
+    /* --h1-size: 128px;
+    --h3-size: 75px;
+    --p-size: 32px; */
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: var(--mainwhite);
+    background-color: var(--primary);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p,
+li {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    /* Ensure it takes full width */
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+    /* Hero main for Mobile */
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .hero-image-container {
+        width: 100%;
+    }
+
+    .mobile-hero-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-box {
+        background-color: var(--secondary);
+        box-shadow: var(--primary);
+        padding-left: 1em;
+        padding-right: 0.4em;
+        width: 100%;
+        max-width: 425px;
+        margin-top: 1em;
+        border-radius: 8px;
+    }
+
+    .hero-box h2 {
+        background-color: var(--mainwhite);
+        color: var(--secondary);
+        width: 100%;
+        margin: 0 0 0 -0.75em;
+        padding: 0.5em;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+        position: relative;
+    }
+
+    .weather-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto 0.5em auto;
+    }
+
+    .hero-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-box ul li {
+        margin: 0.5em 0;
+    }
+
+    footer {
+        background-color: var(--secondary);
+        color: var(--mainwhite);
+        text-align: center;
+        padding: 1em 0;
+    }
+}
+
+/* Wide View */
+@media (min-width: 769px) {
+    #hero {
+        background-image: url(https://raw.githubusercontent.com/cheerios-design/wdd131/refs/heads/main/images/ankara.webp);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+    }
+
+    .hero-image-container {
+        display: none;
+        /* Hide mobile image in wide view */
+    }
+
+    .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 5%;
+    }
+
+    .hero-box {
+        background-color: var(--primary);
+        box-shadow: var(--secondary);
+        color: var(--secondary);
+        padding: 0.5em;
+        width: 50%;
+        max-width: 400px;
+        border-radius: 8px;
+    }
+
+    .hero-box h2 {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5em;
+        background-color: var(--mainwhite);
+        color: var(--secondary);
+        margin: 0 -1em 1em -1em;
+        padding: 0.5em;
+        border-radius: 8px 8px 0 0;
+        width: 92%;
+    }
+
+    .weather-icon {
+        display: inline;
+        /* Inside h2 */
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .weather-icon ::after {
+        display: inline;
+        /* Inside h2 */
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+
+    footer {
+        background-color: var(--secondary);
+        color: var(--primary);
+        text-align: center;
+        padding: 1em 0;
+    }
+}
