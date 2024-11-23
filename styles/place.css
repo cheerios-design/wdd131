@@ -73,7 +73,6 @@ header h1 {
 
     .hero-box {
         background-color: var(--secondary);
-        box-shadow: var(--primary);
         padding-left: 1em;
         padding-right: 0.4em;
         width: 100%;
@@ -145,7 +144,6 @@ header h1 {
 
     .hero-box {
         background-color: var(--primary);
-        box-shadow: var(--secondary);
         color: var(--secondary);
         padding: 0.5em;
         width: 50%;
