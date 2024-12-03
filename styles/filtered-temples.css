@@ -1,0 +1,111 @@
+/* from other documents */
+footer {
+    color: #eee;
+    background-color: #050092;
+    text-align: center;
+    padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page specific */
+body {
+    max-width: 100%;
+    font-family: Sour Gummy, Times, serif;
+}
+
+header {
+    background-color: #050092;
+    color: white;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 1rem;
+}
+
+.turnflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 40px;
+}
+
+/* Nav Styles */
+nav {
+    background-color: rgb(6, 97, 6);
+    margin: 0 auto;
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 3rem;
+}
+
+nav a:hover {
+    background-color: rgb(10, 138, 10);
+
+}
+
+/* MAIN SECTION */
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.photo_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3%;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.photo_grid div {
+    margin: 1rem;
+}
+
+.centered {
+    display: grid;
+    place-items: center;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+.photo_grid figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin-bottom: 10px;
+}
+
+#hamburger_button {
+    display: block;
+}
+
+#nav_bar_two {
+    display: none;
+}

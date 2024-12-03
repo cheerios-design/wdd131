@@ -1,0 +1,41 @@
+@media screen and (min-width: 900px) {
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    .photo_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #hamburger_button {
+        display: none;
+    }
+
+    #nav_bar_two {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1350px) {
+    .photo_grid {
+        /* max-width: 1000px; */
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #nav_bar_two {
+        display: block;
+        background-color: #050092;
+        margin: 0;
+    }
+
+    #nav_bar {
+        display: none;
+    }
+}
