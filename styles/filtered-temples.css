@@ -1,111 +1,181 @@
-/* from other documents */
-footer {
-    color: #eee;
-    background-color: #050092;
-    text-align: center;
-    padding: 20px;
+/* Root Variables */
+:root {
+    --primary: #FFB732;
+    --secondary: #1A2933;
+    --mainwhite: #f3f3f3;
+    --header-font: "Montserrat", sans-serif;
+    --paragraph-font: 'Poppins', sans-serif;
+    /* --h1-size: 128px;
+    --h3-size: 75px;
+    --p-size: 32px; */
 }
 
+
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Page specific */
 body {
-    max-width: 100%;
-    font-family: Sour Gummy, Times, serif;
+    font-family: var(--paragraph-font);
+    color: var(--mainwhite);
+    background-color: #f5f5f5;
+}
+
+h1,
+h2 {
+    font-family: var(--header-font);
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h1 {
+    color: #f5f5f5;
 }
 
 header {
-    background-color: #050092;
-    color: white;
-    margin: 0 auto;
-}
-
-.header {
-    padding: 1rem;
-}
-
-.turnflex {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: #fff;
 }
 
-header img {
-    height: 40px;
-}
-
-/* Nav Styles */
-nav {
-    background-color: rgb(6, 97, 6);
-    margin: 0 auto;
-    display: none;
-}
-
-nav.show {
-    display: block;
+header h1 {
+    font-size: 1.5rem;
 }
 
 nav ul {
     list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 nav a {
-    display: flex;
-    justify-content: center;
+    color: #fff;
     text-decoration: none;
-    color: white;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: rgb(10, 138, 10);
-
+    background-color: var(--secondary);
+    border-radius: 4px;
 }
 
-/* MAIN SECTION */
-main {
-    max-width: 1300px;
-    margin: 0 auto;
-    overflow: hidden;
+.hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.photo_grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 3%;
-    place-items: center;
-    margin: 0 auto;
+.hamburger span {
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
 }
 
-.photo_grid div {
+.hamburger.active span {
+    transform: rotate(45deg);
+}
+
+#search {
+    border-radius: 1rem;
+    padding: 1rem;
     margin: 1rem;
 }
 
-.centered {
+nav ul.visible {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+main {
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.photo-gallery {
     display: grid;
-    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
-h2 {
-    margin-top: 1rem;
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.photo_grid figure img {
+.temple-card img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
 }
 
-figure {
-    margin-bottom: 10px;
+.temple-card h3 {
+    font-family: var(--header-font);
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin: 0.5rem 0;
 }
 
-#hamburger_button {
-    display: block;
+.temple-card p {
+    font-family: var(--paragraph-font);
+    font-size: 0.9rem;
+    color: var(--mainwhite);
+    margin: 0.3rem 0;
+    text-align: center;
 }
 
-#nav_bar_two {
-    display: none;
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+
+@media (min-width: 769px) {
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        background: none;
+        padding: 0;
+    }
+
+    nav ul.visible {
+        display: flex;
+    }
 }
