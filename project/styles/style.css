@@ -1,0 +1,52 @@
+/* Color Schema */
+:root {
+    --primary-color: #003366;
+    /* Deep Navy Blue */
+    --accent-color: #F4C430;
+    /* Golden Yellow */
+    --background-color: #f8f4e3;
+    /* Ivory White */
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: var(--background-color);
+    color: #212121;
+    /* Charcoal Gray */
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--accent-color);
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+}
+
+p {
+    font-family: 'Poppins', serif;
+}
+
+.section {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.accent {
+    color: var(--accent-color);
+}
