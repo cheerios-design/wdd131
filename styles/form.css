@@ -4,9 +4,6 @@
     --mainwhite: #f3f3f3;
     --header-font: "Montserrat", sans-serif;
     --paragraph-font: 'Poppins', sans-serif;
-    /* --h1-size: 128px;
-    --h3-size: 75px;
-    --p-size: 32px; */
 }
 
 /* General Styles */
@@ -76,7 +73,7 @@ fieldset {
 
 legend {
     font-weight: bold;
-    color: #4b0055;
+    color: var(--secondary);
 }
 
 label {
@@ -110,7 +107,7 @@ input[type="radio"] {
 
 input[type="submit"],
 button {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: #fff;
     padding: 0.5em;
     margin: 0;
@@ -124,7 +121,8 @@ button {
 
 input[type="submit"]:hover,
 button:hover {
-    background-color: var(--secondary);
+    background-color: var(--mainwhite);
+    color: var(--primary);
 }
 
 footer {
