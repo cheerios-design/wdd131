@@ -1,0 +1,238 @@
+:root {
+    --font-header: 'Montserrat', sans-serif;
+    --font-paragraph: 'Poppins', sans-serif;
+
+    --primary-color: #1c1e53;
+    --secondary-color: #f84c2c;
+    --white-color: #f3f3f3;
+    --black-color: #151515;
+}
+
+h1,
+h2 {
+    font-family: var(--font-header);
+}
+
+p {
+    font-family: var(--font-paragraph);
+}
+
+
+body {
+    background-color: var(--white-color);
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: .7rem;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    font-family: var(--font-paragraph);
+    padding: .8rem;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 50px;
+}
+
+section {
+    padding: 2rem;
+}
+
+.sec-title {
+    margin: 1rem;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+#about {
+    display: block;
+    align-items: center;
+    justify-items: center;
+    height: 92vh;
+}
+
+#about p {
+    font-size: 2.7rem;
+    text-align: center;
+    width: 80%;
+}
+
+#about p span {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+button {
+    color: var(--primary-color);
+    background-color: transparent;
+    padding: 1rem;
+    border: 2px solid;
+    border-radius: 1.2rem;
+    font-family: var(--font-paragraph);
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+#projects {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--primary-color);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+#projects button {
+    color: var(--white-color);
+}
+
+#projects button:hover {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.project-card img {
+    width: 150px;
+    height: auto;
+}
+
+#hire {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+#contact {
+    display: block;
+    justify-self: center;
+    width: 40%;
+}
+
+#contact label {
+    font-family: var(--font-paragraph);
+}
+
+#contact button {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: large;
+    width: 20%;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 1rem;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    height: 100px;
+}
+
+footer #links {
+    margin: 1rem;
+}
+
+footer #year,
+#lastModified,
+#copyright {
+    font-size: 0.8rem;
+    font-family: var(--font-header);
+}
+
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+}
+
+@media only screen and (max-width: 32rem) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        padding: 0 10px 0 10px;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

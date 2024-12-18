@@ -1,0 +1,13 @@
+@media only screen and (min-width: 32rem) {
+    header {
+        padding: 2rem;
+    }
+
+    nav ul li {
+        margin-left: 2rem;
+    }
+
+    span {
+        font-size: 2rem;
+    }
+}
