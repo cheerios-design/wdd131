@@ -145,6 +145,14 @@ button:hover {
     color: var(--white-color);
 }
 
+#hire button {
+    color: var(--white-color);
+}
+
+#hire button:hover {
+    border: none;
+}
+
 #contact {
     display: block;
     justify-self: center;
