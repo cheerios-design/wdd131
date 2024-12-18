@@ -234,5 +234,20 @@ footer a:hover {
 
     .hamburger {
         display: flex;
+        height: fit-content;
+    }
+
+    #about {
+        font-size: 0.8rem;
+        height: fit-content;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact button {
+        width: 70%;
     }
 }
